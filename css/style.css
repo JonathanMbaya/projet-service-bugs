@@ -1,0 +1,105 @@
+/* Reset */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font: 1.6rem sans-serif;
+    font-family: 'Inconsolata', monospace;
+}
+
+h1{
+    font-size: 3.5 !important;
+}
+
+h1, h2, ul, body, p, figure, ol, blockquote, button{
+    margin: 0;
+    padding: 0;
+}
+
+.m-15{
+    margin: 1.5rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mb-20 {
+    margin-bottom: 2.0rem;
+}
+
+.mt-20{
+    margin-top: 2.0rem;
+}
+
+.p-15 {
+    padding: 1.0rem;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Theme */
+.page-wall{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width:  9rem;
+    height: 9rem;
+}
+
+
+
+/* Onglets forms connexion et inscription */
+.tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tabs .list{
+    padding: 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.tabs .tab{
+    border: 1px solid black;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.tabs .tab.active{
+    background-color: lightgrey;
+    box-shadow: 0 0 5px;
+    cursor: default;
+}
+
+.tabs .contents{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabs .content{
+    display: none;
+}
+
+.tabs .content.show{
+    display: initial;
+}
