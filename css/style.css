@@ -5,11 +5,32 @@ html{
 
 body{
     font: 1.6rem sans-serif;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Barlow', sans-serif;
 }
 
 h1{
-    font-size: 3.5 !important;
+    font-size: 5.5rem !important;
+}
+
+h2{
+    font-size: 4.5rem !important;
+}
+
+h3{
+    font-size: 3.5rem !important;
+}
+
+h4{
+    font-size: 2.5rem !important;
+}
+
+p{
+    font-size: 2rem !important;
+
+}
+
+li{
+    font-size: 2.5rem;
 }
 
 h1, h2, ul, body, p, figure, ol, blockquote, button{
@@ -39,8 +60,15 @@ h1, h2, ul, body, p, figure, ol, blockquote, button{
 
 .center{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+input{
+    padding: 1rem;
+    margin: .8rem;
+    border-radius: .4rem;
 }
 
 
@@ -56,8 +84,16 @@ h1, h2, ul, body, p, figure, ol, blockquote, button{
 }
 
 .logo{
-    width:  9rem;
-    height: 9rem;
+    width:  20rem !important;
+    height: 20rem !important;
+}
+
+div a input{
+    border: none !important;
+    font-size: 1.5rem;
+    background: none;
+    
+
 }
 
 
@@ -71,14 +107,14 @@ h1, h2, ul, body, p, figure, ol, blockquote, button{
 }
 .tabs .list{
     padding: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
     display: flex;
     list-style: none;
     margin: 0;
 }
 
 .tabs .tab{
-    border: 1px solid black;
+    border: 1px solid lightgray;
     padding: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -86,13 +122,14 @@ h1, h2, ul, body, p, figure, ol, blockquote, button{
 }
 
 .tabs .tab.active{
-    background-color: lightgrey;
+    background-color: lightgray;
     box-shadow: 0 0 5px;
     cursor: default;
 }
 
 .tabs .contents{
-    border: 1px solid black;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
     padding: 10px;
 }
 
