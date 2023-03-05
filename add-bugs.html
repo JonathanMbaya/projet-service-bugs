@@ -17,6 +17,10 @@
     
     <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Installation JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <!-- Icons FontAwesome -->
     <script src="https://kit.fontawesome.com/ddf42ed228.js" crossorigin="anonymous"></script>
@@ -33,33 +37,44 @@
 
 <body>
 
+<section class="page-login">
+
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="page-main.html">
-                    <h1>Bugs</h1>
-                </a>
+            <div class="container-fluid ">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="group-navbar">
+                    <a class="navbar-brand" href="page-main.html">
+                        <h1>Bugs</h1>
+                    </a>
+                </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Liste complète</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">A traiter</a>
-                        </li>
+                <div class="group-navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
     
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
-                                <button>Ajouter</button>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Liste complète</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">A traiter</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="add-bugs.html" tabindex="-1" aria-disabled="true">
+                                    <button>Ajouter</button>
+                                </a>
+                            </li>
+                            <li>
+                                <button id="logout">Déconnexion</button>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
@@ -68,19 +83,38 @@
     </header>
 
     <main>
-        <form action="">
-            <div>
-                <label for="title"> Titre (Tacker Designation)</label>
-                <input type="text">
-            </div>
-            <div>
-                <label for="description"> Description</label>
-                <textarea></textarea>
-            </div>
+        <div class="title-add-bug">
+            <h1>Ajouter un bug</h1>
+            <h2>Vous avez détecter une anomalie ?</h2>
+            <p>Déclarer votre bug dès maintenant</p>
+        </div>
+        <form id="form-add-bug">
+        
 
-            <input type="submit" value="Sauvegarder">
+                <div class="form-group">
+                    <label for="title"> Titre (Tacker Designation)</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="description"> Description</label>
+                    <textarea rows="5" cols="33"></textarea>
+                </div>
+
+                <input type="submit" value="Sauvegarder">
+
+    
         </form>
     </main>
-    
+
+    <footer>
+        <p></p>
+    </footer>
+
+</section>
+
+    <script src="../js/localStorage.js"></script>
+    <script src="./js/requestAllBugs.js"></script>
+
 </body>
 </html>
